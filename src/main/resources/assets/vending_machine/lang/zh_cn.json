@@ -1,0 +1,9 @@
+{
+  "creativetab.vending_machine.vending_machine": "售货机",
+
+  "item.vending_machine.copper_coin": "铜币",
+  "item.vending_machine.silver_coin": "银币",
+  "item.vending_machine.gold_coin": "金币",
+
+  "block.vending_machine.vending_machine": "售货机"
+}

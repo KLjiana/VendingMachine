@@ -1,12 +1,12 @@
 package com.kljiana.vendingmachine.item.coin;
 
-public class CopperCoin extends AbstractCoin{
-    public CopperCoin(Properties pProperties) {
-        super(pProperties.fireResistant());
+public class CopperCoinItem extends AbstractCoinItem {
+    public CopperCoinItem() {
+        super();
     }
 
     @Override
     public int money() {
-        return 10;
+        return 1;
     }
 }

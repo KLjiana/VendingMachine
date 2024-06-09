@@ -4,8 +4,9 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DoubleBlockCombiner;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -44,16 +45,6 @@ public class MachineBlock extends Block {
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         return this.defaultBlockState().setValue(FACING, context.getNearestLookingDirection().getOpposite());
-    }
-
-    @Override
-    public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, BlockGetter level, BlockPos pos, BlockPos neighborPos) {
-        // 检查邻居方块是否是空气，如果是则更新方向
-        if (direction.getAxis().isHorizontal() && !state.canSurvive(level, pos)) {
-            
-            return BlockType.AIR.defaultBlockState();
-        }
-        return state;
     }
 
     @Override

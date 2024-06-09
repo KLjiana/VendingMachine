@@ -1,0 +1,9 @@
+{
+  "creativetab.vending_machine.vending_machine": "Vending machine",
+
+  "item.vending_machine.copper_coin": "Copper coin",
+  "item.vending_machine.silver_coin": "Silver coin",
+  "item.vending_machine.gold_coin": "Gold coin",
+
+  "block.vending_machine.vending_machine": "Vending machine"
+}
