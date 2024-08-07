@@ -17,8 +17,4 @@ public class ModItems {
     public static final RegistryObject<Item> COPPER_COIN = ITEMS.register("copper_coin", CopperCoinItem::new);
     public static final RegistryObject<Item> SILVER_COIN = ITEMS.register("silver_coin", SliverCoinItem::new);
     public static final RegistryObject<Item> GOLD_COIN = ITEMS.register("gold_coin", GoldCoinItem::new);
-
-    public static void register(IEventBus bus) {
-        ITEMS.register(bus);
-    }
 }
